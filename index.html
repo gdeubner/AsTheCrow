@@ -11,7 +11,7 @@
     <body>
         <div id="map"></div>
         <div id="panel1" class="map-panel">
-            <span class="title" id="markerA"><b>Marker A </b>(left lick)</span> <br>
+            <span class="title" id="markerA"><b>Marker A </b>(left click)</span> <br>
             <div class="group">
             <span class="label">Longitude:</span>
             <span id="longitude" class="value"></span>
@@ -23,7 +23,7 @@
         </div>
 
         <div id="panel2" class="map-panel">
-            <span class="title" id="markerB"><b>Marker B</b> (right lick)</span> <br>
+            <span class="title" id="markerB"><b>Marker B</b> (right click)</span> <br>
             <div class="group">
             <span class="label">Longitude:</span>
             <span id="longitude2" class="value"></span>
@@ -41,6 +41,13 @@
             <span id="distance" class="value">0</span> <br>
             <span class="label">(miles)</span>
             </span>
+        </div>
+
+        <div id="keyInpt" class="map-panel">
+            <span>Enter your Trimble Maps Key</span><br>
+            <form id="key">
+                <input type="text">
+            </form>
         </div>
 
         <script src="index.js"></script>
