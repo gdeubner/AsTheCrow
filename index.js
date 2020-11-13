@@ -74,7 +74,7 @@ marker1.on('dragend', function(e){
     lngElem.innerHTML = lngLat.lng;
     latElem.innerHTML = lngLat.lat;
 
-    distElem.innerHTML = calculateDistance(lngLat.lng, lngLat.lat, lngElem2.innerHTML, latElem2.innerHTML);
+    distElem.innerHTML = calculateDistance(lngLat.lat, lngLat.long, latElem2.innerHTML, lngElem2.innerHTML);
 });
 
 // Listen to the dragend event of the marker
@@ -86,7 +86,7 @@ marker2.on('dragend', function(e){
     lngElem2.innerHTML = lngLat.lng;
     latElem2.innerHTML = lngLat.lat;
 
-    distElem.innerHTML = calculateDistance(lngLat.lng, lngLat.lat, lngElem.innerHTML, latElem.innerHTML);
+    distElem.innerHTML = calculateDistance(lngLat.lat, lngLat.lng, latElem.innerHTML, lngElem.innerHTML);
 });
 
 function calculateDistance(lat1, lon1, lat2, lon2, unit) {
